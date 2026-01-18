@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parveen Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background:#f9fafb;
+      color: black;
+      line-height: 1.6;
+    }
+    .hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  width: 580px;  /* size adjust kar sakte ho */
+  border-radius: 90px;
+  object-fit: cover;
+}
+
+    .cu-link {
+    color: #8b1c2d;          /* CU maroon */
+    text-decoration: none;  /* underline remove */
+    font-weight: 600;
+  }
+
+  .cu-link:hover {
+    color: #6d0f1b;
+    text-decoration: underline;
+  }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 60px;
+      background: #687ddc;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+    nav a {
+  position: relative;
+  padding-bottom: 6px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color:rgb(141, 176, 76);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+.social-links a {
+  font-size: 32px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #38bdf8;
+}
+
+
+    .logo {
+      color:white;
+      font-weight: bold;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .section {
+      padding: 80px 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 30px;
+    }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      background:rgb(136, 163, 136);
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* Experience */
+    .experience-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .experience-year {
+      color: rgba(0, 0, 0, 0.623);
+      font-size: 14px;
+    }
+
+    .experience-content h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .icon {
+      font-size: 14px;
+      color: #38bdf8;
+      margin-left: 6px;
+    }
+
+    .company {
+      color: #cbd5f5;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .experience-content a {
+  display: inline-block;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.experience-content a:hover {
+  transform: scale(1.02);
+  color: blueviolet;
+}
+
+
+    .description {
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: rgba(56,189,248,0.15);
+      color: #38bdf8;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: grey;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .contact {
+  padding: 80px 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.social-links a {
+  color: #38bdf8;
+  font-size: 32px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #e6aeae;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav, .hero, .section {
+        padding: 20px;
+      }
+
+      .experience-item {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Welcome to the Portfolio of Parveen Kumar</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="Resume.pdf" target="_blank">Resume</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, I’m <span>Parveen Kumar</span></h1>
+      <p>Frontend Developer learning and building clean web interfaces.</p>
+    </div>
+    <div class="hero-image">
+      <img src="developer.jpg" alt="Parveen Kumar" />
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="section about-bg">
+    <h2>About Me</h2>
+    <p>
+  I am currently pursuing my Master of Computer Applications (MCA) at
+  <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a>.
+  </p>
+  </section>
+
+  <!-- Skills -->
+   <section id="about" class="section">
+
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>GitHub</span>
+      <span>Advance Excel</span>
+      <span>SAP</span>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <div class="experience-year">July 2024 — Present</div>
+      <div class="experience-content">
+        <h3>
+          Billing Executive · 
+<a href="https://www.futuremakeup.com/" target="_blank">
+  Future Makeup (India) Pvt Ltd
+</a>
+
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Billing Executive skilled in basic accounting support, invoice creation, data entry, and maintaining billing accuracy.
+        </p>
+        <div class="tags">
+          <span>Logic Cloud</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+        </div>
+      </div>
+    </div>
+<div class="experience-item">
+      <div class="experience-year">Sept 2023 — June 2024</div>
+      <div class="experience-content">
+        <h3>
+          Data Entry Operator (PPC) · 
+<a href="https://avonsteel.in/" target="_blank">
+  Avon Steel Industries Pvt Ltd
+</a>
+
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Worked as a Data Entry Operator in the PPC department, handling production planning data, updating daily reports, and ensuring data accuracy.
+        </p>
+        <div class="tags">
+          <span>SAP</span>
+          <span>SPREADSHEET</span>
+          <span>Mails</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-year">March 2023 — June 2023</div>
+      <div class="experience-content">
+        <h3>
+          Account Assistant · 
+<a href="https://parijatagrochemicals.com/" target="_blank">
+  Parijat Industries (India) Ltd
+</a>
+
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Handled billing operations, prepared monthly expense reports in Excel, and managed email communication for task approvals. Conducted warehouse audits, coordinated dispatch activities, and maintained accurate stock in and stock out records. All entries and operations were performed using Microsoft Dynamics NAV, ensuring data accuracy and process efficiency.
+        </p>
+        <div class="tags">
+          <span>Microsoft Dynamics Nav</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>Warehouse Operations</span>
+          <span>Stock Audit</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-year">June 2019 — Feb 2023</div>
+      <div class="experience-content">
+        <h3>
+          Computer Operator · 
+<a href="https://www.kevaind.org/" target="_blank">
+  Keva Kaipo Industries Pvt Ltd
+</a>
+
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          I am a detail-oriented professional with expertise in Tally and Advanced Excel. I specialize in invoice processing, data supervision, and management reporting, ensuring all financial records are organized and accurate.
+        </p>
+        <div class="tags">
+          <span>Tally</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>supervision</span>
+          <span>Production Operations</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-year">June 2016 — May 2019</div>
+      <div class="experience-content">
+        <h3>
+          Computer Operator · Findoc Impex
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Responsible for inventory stock entries and production data entry, preparing sample challans, executing stock transfers, and maintaining fabric stock records using Logic ERP software. Ensured accurate documentation, real-time inventory updates, and smooth coordination between production and warehouse operations.
+        </p>
+        <div class="tags">
+          <span>Tally</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>supervision</span>
+          <span>Production Operations</span>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio using HTML & CSS.</p>
+        <a href="#">Live</a> | <a href="#">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Calculator UI</h3>
+        <p>Simple calculator layout using CSS.</p>
+        <a href="#">Live</a> | <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+   <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/parveenkumar732264252" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/parveenkumar174" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://github.com/pk753668-ux" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:pk753668@gmail.com" title="Email me">
+  <i class="fas fa-envelope"></i>
+</a>
+
+  </div>
+</section>
+
+  
+  <footer>
+    © 2026 Parveen Kumar Portfolio. All rights reserved.
+  </footer>
+
+</body>
+</html>
