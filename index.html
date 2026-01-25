@@ -5,304 +5,59 @@
   <title>Parveen Kumar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- CSS -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background:#f9fafb;
-      color: black;
-      line-height: 1.6;
-    }
-    .hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 50px;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-    .cu-link {
-    color: #8b1c2d;          /* CU maroon */
-    text-decoration: none;  /* underline remove */
-    font-weight: 600;
-  }
-
-  .cu-link:hover {
-    color: #6d0f1b;
-    text-decoration: underline;
-  }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 60px;
-      background: #687ddc;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      color: #e5e7eb;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-    nav a {
-  position: relative;
-  padding-bottom: 6px;
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #ffffff;
-  transition: width 0.3s ease;
-}
-
-nav a:hover {
-  color:rgb(141, 176, 76);
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-.social-links a {
-  font-size: 32px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
-  color: #38bdf8;
-}
-
-
-    .logo {
-      color:white;
-      font-weight: bold;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 24px;
-    }
-
-    .hero span {
-      color: #38bdf8;
-    }
-
-    .section {
-      padding: 80px 60px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 30px;
-    }
-
-    /* Skills */
-    .skills span {
-      display: inline-block;
-      background:rgb(136, 163, 136);
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    /* Experience */
-    .experience-item {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-
-    .experience-year {
-      color: rgba(0, 0, 0, 0.623);
-      font-size: 14px;
-    }
-
-    .experience-content h3 {
-      font-size: 20px;
-      margin-bottom: 6px;
-    }
-
-    .icon {
-      font-size: 14px;
-      color: #38bdf8;
-      margin-left: 6px;
-    }
-
-    .company {
-      color: #cbd5f5;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .experience-content a {
-  display: inline-block;
-  color: #38bdf8;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.experience-content a:hover {
-  transform: scale(1.02);
-  color: blueviolet;
-}
-
-
-    .description {
-      color: #94a3b8;
-      margin-bottom: 12px;
-    }
-
-    .tags span {
-      display: inline-block;
-      background: rgba(56,189,248,0.15);
-      color: #38bdf8;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      margin-right: 8px;
-      margin-bottom: 8px;
-    }
-
-    /* Projects */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: grey;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    .card a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    .contact {
-  padding: 80px 60px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.social-links a {
-  color: #38bdf8;
-  font-size: 32px;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  color: #e6aeae;
-}
-
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: white;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      nav, .hero, .section {
-        padding: 20px;
-      }
-
-      .experience-item {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- Navbar -->
   <nav>
-    <div class="logo">Welcome to the Portfolio of Parveen Kumar</div>
-    <div>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="Resume.pdf" target="_blank">Resume</a>
-    </div>
-  </nav>
+ <div class="logo">
+  <a href="#home">Parveen</a>
+</div>
+
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+</nav>
+
 
   <!-- Hero -->
- <!-- Hero -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <div class="hero-text" style="flex: 1; text-align: center;">
-      <h1>Hi, I’m <span>Parveen Kumar</span></h1>
-      <p>Frontend Developer learning and building clean web interfaces.</p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Parveen Kumar</span></h1>
+        <p>Frontend Developer | Learning & Building</p>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.png" alt="Parveen Kumar">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- About -->
   <section id="about" class="section about-bg">
     <h2>About Me</h2>
     <p>
-  I am currently pursuing my Master of Computer Applications (MCA) at
-  <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a>.
-  </p>
-  </section>
-
-  <!-- Skills -->
-   <section id="skills" class="section">
-
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>GitHub</span>
-      <span>Advance Excel</span>
-      <span>SAP</span>
-    </div>
+      MCA student at <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a> with a strong interest in full-stack web development.
+      
+    </p>
   </section>
 
   <!-- Experience -->
@@ -314,10 +69,7 @@ nav a:hover::after {
       <div class="experience-content">
         <h3>
           Billing Executive · 
-<a href="https://www.futuremakeup.com/" target="_blank">
-  Future Makeup (India) Pvt Ltd
-</a>
-
+          <a href="https://www.futuremakeup.com/" target="_blank">Future Makeup (India) Pvt Ltd</a>
           <i class="fa-solid fa-briefcase icon"></i>
         </h3>
         <p class="description">
@@ -330,40 +82,36 @@ nav a:hover::after {
         </div>
       </div>
     </div>
-<div class="experience-item">
+
+    <div class="experience-item">
       <div class="experience-year">Sept 2023 — June 2024</div>
       <div class="experience-content">
         <h3>
           Data Entry Operator (PPC) · 
-<a href="https://avonsteel.in/" target="_blank">
-  Avon Steel Industries Pvt Ltd
-</a>
-
+          <a href="https://avonsteel.in/" target="_blank">Avon Steel Industries Pvt Ltd</a>
           <i class="fa-solid fa-briefcase icon"></i>
         </h3>
         <p class="description">
-          Worked as a Data Entry Operator in the PPC department, handling production planning data, updating daily reports, and ensuring data accuracy.
+          Handled production planning data, daily reports, and ensured data accuracy.
         </p>
         <div class="tags">
           <span>SAP</span>
-          <span>SPREADSHEET</span>
+          <span>Spreadsheet</span>
           <span>Mails</span>
         </div>
       </div>
     </div>
+
     <div class="experience-item">
       <div class="experience-year">March 2023 — June 2023</div>
       <div class="experience-content">
         <h3>
           Account Assistant · 
-<a href="https://parijatagrochemicals.com/" target="_blank">
-  Parijat Industries (India) Ltd
-</a>
-
+          <a href="https://parijatagrochemicals.com/" target="_blank">Parijat Industries (India) Ltd</a>
           <i class="fa-solid fa-briefcase icon"></i>
         </h3>
         <p class="description">
-          Handled billing operations, prepared monthly expense reports in Excel, and managed email communication for task approvals. Conducted warehouse audits, coordinated dispatch activities, and maintained accurate stock in and stock out records. All entries and operations were performed using Microsoft Dynamics NAV, ensuring data accuracy and process efficiency.
+          Managed billing operations, Excel reports, email communication, warehouse audits, and stock entries using Microsoft Dynamics NAV.
         </p>
         <div class="tags">
           <span>Microsoft Dynamics Nav</span>
@@ -377,7 +125,7 @@ nav a:hover::after {
     <div class="experience-item">
       <div class="experience-year">June 2019 — Feb 2023</div>
       <div class="experience-content">
-        <h3>
+    <h3>
           Computer Operator · 
 <a href="https://www.kevaind.org/" target="_blank">
   Keva Kaipo Industries Pvt Ltd
@@ -416,65 +164,47 @@ nav a:hover::after {
         </div>
       </div>
     </div>  
+
+    <!-- Add other experience items similarly -->
   </section>
 
   <!-- Projects -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-
     <div class="projects">
       <div class="card">
+        <a href="index.html" class="project-card">
+          <img src="coder.jpg" alt="Portfolio Project" class="project-img">
+          <div class="overlay">View Project</div>
+        </a>
         <h3>Portfolio Website</h3>
-        <p>Personal portfolio using HTML & CSS.</p>
-        <a href="#">Live</a> | <a href="#">GitHub</a>
       </div>
 
       <div class="card">
-        <h3>Calculator UI</h3>
-        <p>Simple calculator layout using CSS.</p>
-        <a href="#">Live</a> | <a href="#">GitHub</a>
+        <a href="calculator.html" class="project-card" target="_blank">
+          <img src="calc.png" alt="Calculator" class="project-img">
+          <div class="overlay">View Project</div>
+        </a>
+        <h3>Calculator</h3>
       </div>
     </div>
   </section>
-
   <!-- Contact -->
-   <section id="contact" class="contact">
-  <h2>Contact Me</h2>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/parveenkumar732264252" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/parveenkumar174" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/pk753668-ux" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:pk753668@gmail.com" title="Email me"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/parveenkumar732264252" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://www.instagram.com/parveenkumar174" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://github.com/pk753668-ux" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:pk753668@gmail.com" title="Email me">
-  <i class="fas fa-envelope"></i>
-</a>
-
-  </div>
-</section>
-
-  
   <footer>
     © 2026 Parveen Kumar Portfolio. All rights reserved.
   </footer>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if(target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-</script>
 
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
