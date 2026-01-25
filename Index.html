@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parveen Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+ <div class="logo">
+  <a href="#home">Parveen</a>
+</div>
+
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+</nav>
+
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Parveen Kumar</span></h1>
+        <p>Frontend Developer | Learning & Building</p>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.png" alt="Parveen Kumar">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about-bg">
+    <h2>About Me</h2>
+    <p>
+      MCA student at <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a> with a strong interest in full-stack web development.
+      
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <div class="experience-year">July 2024 — Present</div>
+      <div class="experience-content">
+        <h3>
+          Billing Executive · 
+          <a href="https://www.futuremakeup.com/" target="_blank">Future Makeup (India) Pvt Ltd</a>
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Billing Executive skilled in basic accounting support, invoice creation, data entry, and maintaining billing accuracy.
+        </p>
+        <div class="tags">
+          <span>Logic Cloud</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-year">Sept 2023 — June 2024</div>
+      <div class="experience-content">
+        <h3>
+          Data Entry Operator (PPC) · 
+          <a href="https://avonsteel.in/" target="_blank">Avon Steel Industries Pvt Ltd</a>
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Handled production planning data, daily reports, and ensured data accuracy.
+        </p>
+        <div class="tags">
+          <span>SAP</span>
+          <span>Spreadsheet</span>
+          <span>Mails</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-year">March 2023 — June 2023</div>
+      <div class="experience-content">
+        <h3>
+          Account Assistant · 
+          <a href="https://parijatagrochemicals.com/" target="_blank">Parijat Industries (India) Ltd</a>
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Managed billing operations, Excel reports, email communication, warehouse audits, and stock entries using Microsoft Dynamics NAV.
+        </p>
+        <div class="tags">
+          <span>Microsoft Dynamics Nav</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>Warehouse Operations</span>
+          <span>Stock Audit</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-year">June 2019 — Feb 2023</div>
+      <div class="experience-content">
+    <h3>
+          Computer Operator · 
+<a href="https://www.kevaind.org/" target="_blank">
+  Keva Kaipo Industries Pvt Ltd
+</a>
+
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          I am a detail-oriented professional with expertise in Tally and Advanced Excel. I specialize in invoice processing, data supervision, and management reporting, ensuring all financial records are organized and accurate.
+        </p>
+        <div class="tags">
+          <span>Tally</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>supervision</span>
+          <span>Production Operations</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-year">June 2016 — May 2019</div>
+      <div class="experience-content">
+        <h3>
+          Computer Operator · Findoc Impex
+          <i class="fa-solid fa-briefcase icon"></i>
+        </h3>
+        <p class="description">
+          Responsible for inventory stock entries and production data entry, preparing sample challans, executing stock transfers, and maintaining fabric stock records using Logic ERP software. Ensured accurate documentation, real-time inventory updates, and smooth coordination between production and warehouse operations.
+        </p>
+        <div class="tags">
+          <span>Tally</span>
+          <span>Advance Excel</span>
+          <span>Mails</span>
+          <span>supervision</span>
+          <span>Production Operations</span>
+        </div>
+      </div>
+    </div>  
+
+    <!-- Add other experience items similarly -->
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <a href="index.html" class="project-card">
+          <img src="coder.jpg" alt="Portfolio Project" class="project-img">
+          <div class="overlay">View Project</div>
+        </a>
+        <h3>Portfolio Website</h3>
+      </div>
+
+      <div class="card">
+        <a href="calculator.html" class="project-card" target="_blank">
+          <img src="calc.png" alt="Calculator" class="project-img">
+          <div class="overlay">View Project</div>
+        </a>
+        <h3>Calculator</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/parveenkumar732264252" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/parveenkumar174" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/pk753668-ux" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:pk753668@gmail.com" title="Email me"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Parveen Kumar Portfolio. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
