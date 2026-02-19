@@ -16,7 +16,7 @@
   <!-- Navbar -->
   <nav>
  <div class="logo">
-  <a href="#home">Parveen</a>
+  <a href="#home">Portfolio</a>
 </div>
 
 
@@ -29,6 +29,8 @@
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#videos">Videos</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </div>
   <button class="theme-toggle" onclick="toggleTheme()">
@@ -55,8 +57,9 @@
   <section id="about" class="section about-bg">
     <h2>About Me</h2>
     <p>
-      MCA student at <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a> with a strong interest in full-stack web development.
-      
+      I am an MCA student at <a href="https://www.cuchd.in" target="_blank" class="cu-link">Chandigarh University</a> with a strong interest in full-stack web development.
+      I enjoy building clean, responsive, and user-friendly web applications while continuously improving my skills.
+  
     </p>
   </section>
 
@@ -68,17 +71,18 @@
       <div class="experience-year">July 2024 — Present</div>
       <div class="experience-content">
         <h3>
-          Billing Executive · 
+          Senior Executive · 
           <a href="https://www.futuremakeup.com/" target="_blank">Future Makeup (India) Pvt Ltd</a>
           <i class="fa-solid fa-briefcase icon"></i>
         </h3>
         <p class="description">
-          Billing Executive skilled in basic accounting support, invoice creation, data entry, and maintaining billing accuracy.
+          Senior Executive responsible for managing daily operations, supervising team members, and ensuring tasks are completed efficiently while supporting organizational goals.
         </p>
         <div class="tags">
           <span>Logic Cloud</span>
           <span>Advance Excel</span>
           <span>Mails</span>
+          <span>Data management</span>
         </div>
       </div>
     </div>
@@ -189,7 +193,60 @@
       </div>
     </div>
   </section>
+  <!-- Video Section -->
+<section id="videos" class="section">
+  <h2>Videos</h2>
+
+  <div class="video-grid">
+<iframe width="755" height="425" src="https://www.youtube.com/embed/h13RYohtLv0" title="“Unlocking the Secret of Namamishamishan: The Mystery You&#39;ve Never Heard Of!”" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="video-grid">
+      <iframe width="756" height="425" src="https://www.youtube.com/embed/_p18jp9f1y8?list=RD_p18jp9f1y8" title="Agam - Epic Hanuman Chalisa with Lyrics | Hanuman most popular Bhajan | Original Composition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+
+  <div class="gallery-grid">
+
+    <img src="best.jpg" onclick="openImage(this.src)">
+    <img src="happy.jpg" onclick="openImage(this.src)">
+    <img src="comfort.jpg" onclick="openImage(this.src)">
+    <img src="way.jpg" onclick="openImage(this.src)">
+
+  </div>
+
+</section>
+
+  
   <!-- Contact -->
+  <h3>Send Message</h3>
+
+<form action="https://formsubmit.co/pk753668@gmail.com" method="POST" class="contact-form">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <input type="text" name="subject" placeholder="Subject" required>
+
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send</button>
+
+</form>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New message from your portfolio">
+<input type="hidden" name="_template" value="table">
+
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <div class="social-links">
@@ -199,6 +256,17 @@
       <a href="mailto:pk753668@gmail.com" title="Email me"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
+  
+  <!-- Popup Viewer -->
+<div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+
+  <img id="popup-img">
+  
+  <video id="popup-video" controls></video>
+
+</div>
+
 
   <footer>
     © 2026 Parveen Kumar Portfolio. All rights reserved.
